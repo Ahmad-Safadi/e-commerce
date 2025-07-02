@@ -1,0 +1,102 @@
+/* إعدادات عامة */
+body {
+  background-color: #f8f9fa;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px 20px;
+  margin: 0;
+  color: #333;
+  min-height: 100vh;
+}
+
+/* زر الرجوع */
+a {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #21618c;
+}
+
+/* الحاوية الرئيسية */
+.Basket {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 800px;
+  margin: auto;
+}
+
+/* كل عنصر داخل السلة */
+.Basket div {
+  background-color: #ffffff;
+  border-radius: 15px;
+  padding: 20px 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: transform 0.25s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.Basket div:hover {
+  transform: translateY(-5px);
+}
+
+/* اسم المنتج والسعر والكمية */
+.Basket h3 {
+  margin: 0;
+  font-size: 18px;
+  color: #2c3e50;
+}
+
+/* زر الحذف أو الإضافة */
+form {
+  display: inline-block;
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background-color: #3498db;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 10px;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.delete-btn:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* المجموع الكلي والرسائل */
+.total,
+.error {
+  text-align: center;
+  font-size: 16px;
+  margin-top: 30px;
+}
+
+.total {
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+  margin-top: 30px;
+  color: #27ae60; /* أخضر */
+}
+
+.error {
+  color: #e74c3c; /* أحمر */
+  text-align: center;
+  font-size: 16px;
+}

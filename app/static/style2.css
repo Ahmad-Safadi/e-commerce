@@ -1,0 +1,73 @@
+/* الخطوط العامة */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f7f9fc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* عنوان الصفحة */
+h1 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+/* نموذج تسجيل الدخول */
+form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* عناصر الإدخال */
+.input {
+  padding: 12px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+/* زر الإرسال */
+.btn {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #2980b9;
+}
+
+/* رسالة الخطأ */
+h6 {
+  color: red;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* الرابط لصفحة التسجيل */
+a {
+  text-align: center;
+  margin-top: 20px;
+  color: #3498db;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+a:hover {
+  text-decoration: underline;
+}

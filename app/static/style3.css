@@ -1,0 +1,74 @@
+/* تنسيق الخط والخلفية */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f4f7f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px 20px;
+}
+
+/* العنوان */
+h1 {
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* النموذج */
+form {
+  background-color: #ffffff;
+  padding: 30px 40px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* الحقول */
+.input {
+  padding: 12px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+}
+
+/*
+h6 {
+  color: red;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+*/
+/* الزر */
+.btn {
+  background-color: #27ae60;
+  color: #fff;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 10px;
+}
+
+.btn:hover {
+  background-color: #1e8449;
+}
+
+/* الرابط */
+a {
+  margin-top: 20px;
+  text-align: center;
+  color: #2980b9;
+  font-size: 14px;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}

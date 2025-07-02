@@ -1,0 +1,94 @@
+/* تنسيق عام للصفحة */
+body {
+  background-color: #f5f7fa;
+  font-family: 'Segoe UI', sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 20px;
+  min-height: 100vh;
+}
+
+/* النموذج */
+form {
+  background-color: #fff;
+  padding: 30px 40px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+/* عناصر الإدخال */
+input[type="text"],
+input[type="number"],
+input[type="file"],
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-size: 15px;
+  box-sizing: border-box;
+  transition: border-color 0.2s ease;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+input[type="file"]:focus,
+textarea:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* زر الإرسال */
+input[type="submit"],
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 16px;
+  cursor: pointer;
+  width: 100%;
+  transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover,
+button:hover {
+  background-color: #2980b9;
+}
+
+/* عنوان الحقول */
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* الرسائل (مثل الأخطاء) */
+h6 {
+  color: #e74c3c;
+  font-weight: normal;
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+/* زر الرجوع */
+a {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  text-decoration: none;
+  color: #3498db;
+  font-weight: bold;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+a:hover {
+  color: #21618c;
+}

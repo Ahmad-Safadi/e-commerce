@@ -1,0 +1,117 @@
+/* إعدادات عامة */
+body {
+  background-color: #f2f5f7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* العنوان الرئيسي */
+h1 {
+  text-align: center;
+  font-size: 36px;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* روابط أعلى الصفحة */
+a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #16a085;
+}
+
+/* شبكة المنتجات */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px 0;
+}
+
+/* كل منتج */
+.item {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+/* شارة "جديد" */
+.badge {
+  background-color: #e74c3c;
+  color: #fff;
+  padding: 4px 10px;
+  border-radius: 5px;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* معلومات المنتج */
+.info h2 {
+  margin: 10px 0;
+  font-size: 20px;
+  color: #34495e;
+}
+
+.item img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* وصف وسعر المنتج */
+.description {
+  color: #666;
+  font-size: 14px;
+  margin: 10px 0;
+}
+
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price {
+  font-size: 18px;
+  color: #27ae60;
+  font-weight: bold;
+}
+
+.stars {
+  color: gold;
+}
+
+/* زر الإضافة إلى السلة */
+form {
+  margin-top: 10px;
+}
+
+.delete-btn {
+  background-color: #2ecc71;
+  color: white;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #27ae60;
+}

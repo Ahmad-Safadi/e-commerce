@@ -1,0 +1,129 @@
+/* الأساسيات */
+body {
+  background-color: #f4f6f8;
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+}
+
+/* العنوان */
+h1 {
+  text-align: center;
+  color: #2c3e50;
+  margin-bottom: 30px;
+}
+
+/* الروابط العلوية */
+a {
+  margin: 0 10px;
+  text-decoration: none;
+  color: #2980b9;
+  font-weight: bold;
+}
+
+a:hover {
+  color: #1abc9c;
+}
+
+/* حاوية العناصر */
+.items {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+/* كل عنصر منتج */
+.item {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  overflow: hidden;
+  padding: 15px;
+  transition: transform 0.2s;
+}
+
+.item:hover {
+  transform: translateY(-5px);
+}
+
+/* شارة "جديد" */
+.badge {
+  background-color: #e74c3c;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 8px;
+  font-size: 13px;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+
+/* صورة المنتج */
+.item img {
+  width: 100%;
+  border-radius: 10px;
+  margin: 10px 0;
+}
+
+/* وصف المنتج */
+.description {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #555;
+}
+
+/* السعر والتقييم */
+.price-rating {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: bold;
+  color: #27ae60;
+}
+
+.stars {
+  color: gold;
+}
+
+/* الأزرار */
+form {
+  display: inline;
+}
+
+.delete-btn {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 5px 2px;
+  transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+  background-color: #c0392b;
+}
+
+/* زر "تعديل" */
+.item a[href*="edit"] {
+  background-color: #3498db;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  margin: 5px 2px;
+  display: inline-block;
+}
+
+.item a[href*="edit"]:hover {
+  background-color: #2980b9;
+}

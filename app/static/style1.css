@@ -1,1 +1,35 @@
+/* إعداد عام للصفحة */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f4f4f8;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  flex-direction: column;
+}
 
+/* تنسيق الروابط */
+a {
+  display: inline-block;
+  margin: 10px;
+  padding: 12px 24px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+  font-size: 16px;
+}
+
+a:hover {
+  background-color: #2980b9;
+  transform: scale(1.05);
+}
+
+/* تأثير جميل عند الضغط */
+a:active {
+  transform: scale(0.97);
+}
