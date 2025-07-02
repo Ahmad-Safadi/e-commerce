@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <title>Hello, World!</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='style7.css') }}">
+  <a href="/admin_product">Back</a>
+</head>
+<body>
+  <div class="Basket">
+    {% for i in carditem %}
+    <div>
+      <h3> {{ i.product_name }} </h3>
+      <h3> {{ i.price_at_time}} </h3>
+      <h3> {{ i.quantity }} </h3>
+      <form action="{{ url_for('less_product.less', id=i.id) }}" method="post" style="display:inline;" onsubmit="return confirm('هل أنت متأكد من حذف المنتج؟');">
+        {{ delete_quantity.hidden_tag() }}
+        {{ delete_quantity.less(class="delete-btn") }}
+      </form>
+      <form action="{{ url_for('add_product.add', id=i.id) }}" method="post" style="display:inline;" onsubmit="return confirm('هل أنت متأكد من حذف المنتج؟');">
+        {{ add_quantity.hidden_tag() }}
+        {{ add_quantity.add(class="delete-btn") }}
+      </form>
+    </div>
+    {% endfor %}
+  </div>
+  <div class="total">{{ total_price }}</div>
+  <div class="error">{{ error_message }}</div>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style6.css') }}">
+  <title>Hello, World!</title>
+</head>
+<body>
+  <h1>E-Commerce</h1>
+  
+  <a href="/the_basket">Basket</a>
+  
+  <a href="{{ url_for('log_out.out') }}">Log Out</a>
+  
+  <div class="items">
+    
+    {% for i in product %}
+      <div class="item">
+        <div class="badge">New</div>
+        <div class="info">
+          <h2>{{ i.name }}</h2>
+          <img src="{{ url_for('image_bp.image', id=i.id) }}" width="300" height="300">
+          <p class="description">{{ i.description }}</p>
+          <div class="price-rating">
+            <span class="price">{{ i.price }}</span>
+            <span class="stars">☆☆☆☆☆</span>
+          </div>
+          <form action="{{ url_for('add_card.card', id=i.id) }}" method="post" style="display:inline;" onsubmit="return confirm('هل أنت متأكد من اضافته؟');">
+            {{ add_card.hidden_tag() }}
+            {{ add_card.add(class="delete-btn") }}
+          </form>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  
+</body>
+</html>
