@@ -34,10 +34,3 @@ A web application built with Flask that provides product management and shopping
 - Organized code with Flask Blueprints
 
 ---
-
-## Installation and Running
-
-1. Clone the repository  
-```bash
-git clone https://github.com/yourusername/flask-ecommerce.git
-cd flask-ecommerce
